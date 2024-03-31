@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js" ></script>
+  <title>Scoreboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .scoreboard {
+      display: inline-block;
+      border: 2px solid #333;
+      padding: 20px;
+      margin: 20px;
+    }
+    .team-name {
+      margin-bottom: 10px;
+    }
+    .points {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .timer {
+      font-size: 36px;
+      margin-bottom: 20px;
+	  vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="scoreboard" style="text-align:left;vertical-align:middle;">
+      <span class="team-name" id="team1Name"></span> : <span class="points" id="team1Points"></span>
+  </div>
+      <span class="timer" id="timer"></span>
+  <span class="scoreboard" style="text-align:left;vertical-align:middle;">
+      <span class="team-name" id="team2Name"></span> : <span class="points" id="team2Points"></span>
+  </span>
+  
+  <script>
+    $(document).ready(function() {
+      setInterval(function(){
+	    console.log(localStorage.getItem('team1Name'));
+        $('#team1Name').html(localStorage.getItem('team1Name'));
+        $('#team1Points').html(localStorage.getItem('team1Points'));
+        $('#team2Name').html(localStorage.getItem('team2Name'));
+        $('#team2Points').html(localStorage.getItem('team2Points'));
+        $('#timer').html(localStorage.getItem('timer'));
+      }, 200);
+    });
+  </script>
+ 
+</body>
+</html>
