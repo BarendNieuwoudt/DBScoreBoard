@@ -5,5 +5,6 @@ $(document).ready(function() {
     $('#team2Name').html(localStorage.getItem('team2Name'));
     $('#team2Points').html(localStorage.getItem('team2Points'));
     $('#timer').html(localStorage.getItem('timer'));
-  }, 200);
+    $('#gameTimer').html(localStorage.getItem('gameTimer'));
+  }, 100);
 });

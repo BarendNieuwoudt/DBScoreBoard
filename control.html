@@ -42,7 +42,22 @@
 				<button onclick="setCustomTime()">Set Time</button>
 			</div>
 		</div>
+		<div class="scoreboard">
+			<div class="timer" id="gameTimer">15:00</div>
+			<div class="buttons">
+				<button onclick="startGameTimer()">Start</button>
+				<button onclick="pauseGameTimer()">Pause</button>
+				<button onclick="stopGameTimer()">Stop</button>
+			</div>
+			<br/>
+			<div>
+				<input type="text" id="gameTimeInput" placeholder="mm:ss">
+				<button onclick="setCustomGameTime()">Set Time</button>
+			</div>
+		</div>
 		<div class="buttons">
+			<button onclick="pauseGameTimer();pauseTimer();">Pause Timers</button>
+			<button onclick="startGameTimer();startTimer();">Start Timers</button>
 			<button onclick="updateScoreboard()">Update Scoreboard</button>
 		</div>
 	</body>
