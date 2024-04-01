@@ -8,6 +8,7 @@ body {
   padding: 20px;
   margin: 20px;
   vertical-align:middle;
+  border-radius: 15px;
 }
 .team-name {
   margin-bottom: 10px;
@@ -20,4 +21,9 @@ body {
   font-size: 36px;
   margin-bottom: 20px;
   vertical-align:middle;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
