@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <title>Scoreboard</title>
-    <script src="scripts/jquery.js" ></script>
-    <script src="scripts/control.js" ></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  
-  <body>
-    
-    <div class="scoreboard">
-      <div class="team-name">
-        <input type="text" id="team1Name" value="Team 1">
-      </div>
-      <div id="team1Points">0</div>
-      <div class="points">
-        <button onclick="updateScore('team1', 1)">+</button>
-        <button onclick="updateScore('team1', -1)">-</button>
-      </div>
-    </div>
-  
-    <div class="scoreboard">
-      <div class="team-name">
-        <input type="text" id="team2Name" value="Team 2">
-      </div>
-      <div id="team2Points">0</div>
-      <div class="points">
-        <button onclick="updateScore('team2', 1)">+</button>
-        <button onclick="updateScore('team2', -1)">-</button>
-      </div>
-    </div>
-	
-	<br/>
-    <div class="scoreboard">
-      <div class="timer" id="timer">03:00</div>
-      <div class="buttons">
-        <button onclick="startTimer()">Start</button>
-        <button onclick="pauseTimer()">Pause</button>
-        <button onclick="stopTimer()">Stop</button>
-      </div>
-      <br/>
-      <div>
-        <input type="text" id="timeInput" placeholder="mm:ss">
-        <button onclick="setCustomTime()">Set Time</button>
-      </div>
-    </div>
-	
-	<div class="buttons">
-      <button onclick="updateScoreboard()">Update Scoreboard</button>
-    </div>
-
-  </body>
-  
+	<head>
+		<title>Scoreboard</title>
+		<script src="scripts/jquery.js" ></script>
+		<script src="scripts/control.js" ></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	</head>
+	<body>
+		<div class="scoreboard">
+			<div class="team-name">
+				<input type="text" id="team1Name" value="Team 1">
+			</div>
+			<div id="team1Points">0</div>
+			<div class="points">
+				<button onclick="updateScore('team1', 1)">+</button>
+				<button onclick="updateScore('team1', -1)">-</button>
+			</div>
+		</div>
+		<div class="scoreboard">
+			<div class="team-name">
+				<input type="text" id="team2Name" value="Team 2">
+			</div>
+			<div id="team2Points">0</div>
+			<div class="points">
+				<button onclick="updateScore('team2', 1)">+</button>
+				<button onclick="updateScore('team2', -1)">-</button>
+			</div>
+		</div>
+		<br/>
+		<div class="scoreboard">
+			<div class="timer" id="timer">03:00</div>
+			<div class="buttons">
+				<button onclick="startTimer()">Start</button>
+				<button onclick="pauseTimer()">Pause</button>
+				<button onclick="stopTimer()">Stop</button>
+			</div>
+			<br/>
+			<div>
+				<input type="text" id="timeInput" placeholder="mm:ss">
+				<button onclick="setCustomTime()">Set Time</button>
+			</div>
+		</div>
+		<div class="buttons">
+			<button onclick="updateScoreboard()">Update Scoreboard</button>
+		</div>
+	</body>
 </html>
