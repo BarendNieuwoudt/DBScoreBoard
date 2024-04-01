@@ -8,33 +8,36 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	</head>
 	<body>
+		<!-- TEAM 1 -->
 		<div class="scoreboard">
 			<div class="team-name">
 				<input type="text" id="team1Name" value="Team 1">
 			</div>
-			<div id="team1Points">0</div>
-			<div class="points">
+			<div class="points" id="team1Points">0</div>
+			<div>
 				<button onclick="updateScore('team1', 1)">+</button>
 				<button onclick="updateScore('team1', -1)">-</button>
 			</div>
 		</div>
+		<!-- TEAM 2 -->
 		<div class="scoreboard">
 			<div class="team-name">
 				<input type="text" id="team2Name" value="Team 2">
 			</div>
-			<div id="team2Points">0</div>
-			<div class="points">
+			<div class="points" id="team2Points">0</div>
+			<div>
 				<button onclick="updateScore('team2', 1)">+</button>
 				<button onclick="updateScore('team2', -1)">-</button>
 			</div>
 		</div>
 		<br/>
+		<!-- ROUND TIMER -->
 		<div class="scoreboard">
-			<div class="timer" id="timer">03:00</div>
+			<div class="timer" id="timer">3:00</div>
 			<div class="buttons">
 				<button onclick="startTimer()">Start</button>
 				<button onclick="pauseTimer()">Pause</button>
-				<button onclick="stopTimer()">Stop</button>
+				<button onclick="stopTimer()">Reset</button>
 			</div>
 			<br/>
 			<div>
@@ -42,12 +45,13 @@
 				<button onclick="setCustomTime()">Set Time</button>
 			</div>
 		</div>
+		<!-- GAME TIMER -->
 		<div class="scoreboard">
 			<div class="timer" id="gameTimer">15:00</div>
 			<div class="buttons">
 				<button onclick="startGameTimer()">Start</button>
 				<button onclick="pauseGameTimer()">Pause</button>
-				<button onclick="stopGameTimer()">Stop</button>
+				<button onclick="stopGameTimer()">Reset</button>
 			</div>
 			<br/>
 			<div>
@@ -55,9 +59,10 @@
 				<button onclick="setCustomGameTime()">Set Time</button>
 			</div>
 		</div>
+		<!-- UNIVERSAL CONTROLS -->
 		<div class="buttons">
-			<button onclick="pauseGameTimer();pauseTimer();">Pause Timers</button>
 			<button onclick="startGameTimer();startTimer();">Start Timers</button>
+			<button onclick="pauseGameTimer();pauseTimer();">Pause Timers</button>
 			<button onclick="updateScoreboard()">Update Scoreboard</button>
 		</div>
 	</body>

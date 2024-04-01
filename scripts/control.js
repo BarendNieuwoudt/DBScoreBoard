@@ -12,6 +12,8 @@ function updateTimer() {
 }
 
 function startTimer() {
+	// Clicking the button twice makes the thing count 
+	// down twice as fast. This is a problem.
 	timerInterval = setInterval(() => {
 		if (timeLeft <= 0) {
 			clearInterval(timerInterval);
@@ -53,6 +55,8 @@ function updateGameTimer() {
 }
 
 function startGameTimer() {
+	// Clicking the button twice makes the thing count 
+	// down twice as fast. This is a problem.
 	gameTimerInterval = setInterval(() => {
 		if (gameTimeLeft <= 0) {
 			clearInterval(gameTimerInterval);
